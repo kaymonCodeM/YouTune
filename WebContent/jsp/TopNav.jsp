@@ -5,23 +5,23 @@
 <!DOCTYPE html>
 
  <header>
- 	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
+ 	<nav class="navbar navbar-expand-lg bg-light navbar-light">
+ 		<div class="container">
         	<a href="#" class="navbar-brand">YouTunes</a>
         	
-        	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+        	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" >
         	<span class="navbar-toggler-icon"></span>
         	</button>
 
 			
-        	<div class="collapse navbar-collapse" id="navbarNav">
+        	<div class="collapse navbar-collapse" id="navbarMenu">
             	<ul class="navbar-nav ms-auto">
             	    <li class="nav-item"><a class="nav-link" href="artists/List.jsp">Artists</a></li>
         	        <li class="nav-item"><a class="nav-link" href="About.jsp">About Us</a></li>
     	            <li class="nav-item"><a class="nav-link" href="Contact.jsp">Contact Us</a></li>
 	            </ul>
         	</div>
-    	</div>
+ 		</div>
    </nav>
    
 </header>
