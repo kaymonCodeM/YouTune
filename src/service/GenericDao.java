@@ -2,8 +2,7 @@ package service;
 
 import java.util.List;
 
-public interface GenericDao<E, K> 
-{
+public interface GenericDao<E, K> {
 	void add (E entity); // create 
 	
 	List<E> list(); // read 

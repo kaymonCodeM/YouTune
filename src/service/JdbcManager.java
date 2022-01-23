@@ -34,6 +34,7 @@ public class JdbcManager {
 		Connection conn = null;
 		
 		System.out.println("jdbcUrl: " + jdbcUrl + "; jdbcUserName: " + jdbcUserName + "; jdbcPassword: " + jdbcPassword);
+		System.out.println("Get Connection Successful");
 		
 		try 
 		{

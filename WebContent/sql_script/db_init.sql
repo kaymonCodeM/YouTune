@@ -51,34 +51,64 @@ CREATE TABLE album (
 
 
 -- insert artist statements 
+
+-- Jazz
 INSERT INTO artist(first_name, last_name)
-	VALUES('Kid', 'Cudi');
+	VALUES('Alfa', 'Mist');
 
 INSERT INTO artist(first_name, last_name)
-	VALUES('Elton', 'John');
+	VALUES('Joey', 'Defrancesco');
+
+-- Classical
+INSERT INTO artist(first_name, last_name)
+	VALUES('Claude', 'Debussy');
+    
+INSERT INTO artist(first_name, last_name)
+	VALUES('Ludwig van', 'Beethoven');
+
+-- Blues
+INSERT INTO artist(first_name, last_name)
+	VALUES('Sugaray', 'Rayford');
 	
 INSERT INTO artist(first_name, last_name)
-	VALUES('Billie', 'Holidy');
+	VALUES('Eric', 'Bibb');
+    
+-- Rock
+INSERT INTO artist(first_name, last_name)
+	VALUES('Green', 'Day');
 	
 INSERT INTO artist(first_name, last_name)
-	VALUES('Childish', 'Gambino');
-	
-INSERT INTO artist(first_name, last_name)
-	VALUES('Chance', 'The Rapper');
+	VALUES('The ', 'Cranberries');
 	
 	
 -- insert album statements
+
+-- Jazz
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Man On the Moon: The End of Day', 29.99, 'Hip Hop', '/youtunes/images/ManonTheMoonTheEndofDay.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Cudi'));
+	VALUES('Antiphon', 29.99, 'Jazz', '/youtunes/images/antiphon.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Mist'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Honky Chateau', 141.59, 'Classic Rock', '/youtunes/images/HonkyChateau.jpg', (SELECT artist_id FROM artist WHERE last_name = 'John'));
+	VALUES('More Music', 35.59, 'Jazz', '/youtunes/images/more_music.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Defrancesco'));
+	
+-- Clasical
+INSERT INTO album(title, price, genre, img_url, artist_id)
+	VALUES('Clair De Lune', 132.18, 'Classical', '/youtunes/images/clair_de_lune.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Debussy'));
+
+INSERT INTO album(title, price, genre, img_url, artist_id)
+	VALUES('Beethoven Complete Edition', 119.99, 'Classical', '/youtunes/images/beethoven_complete_edition.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Beethoven'));
+	
+-- Blues
+INSERT INTO album(title, price, genre, img_url, artist_id)
+	VALUES('Someboy Save Me', 39.90, 'Blues', '/youtunes/images/somebody_save_me.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Rayford'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Billie Holiday 1957', 132.18, 'Classical', '/youtunes/images/BillieHoliday.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Holidy'));
+	VALUES('Bookers Guitar', 19.89, 'Blues', '/youtunes/images/bookers_guitar.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Bibb'));
+
+-- Rock
+INSERT INTO album(title, price, genre, img_url, artist_id)
+	VALUES('Dookie', 45.90, 'Rock', '/youtunes/images/dookie.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Day'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Awaken, My Love!', 39.90, 'Hip Hop', '/youtunes/images/AwakenMyLove.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Gambino'));
-	
-INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Acid Rap', 19.89, 'Rap', '/youtunes/images/AcidRap.jpg', (SELECT artist_id FROM artist WHERE last_name = 'The Rapper'));
+	VALUES('No Need To Argue', 29.89, 'Rock', '/youtunes/images/no_need_to_argue.jpg', (SELECT artist_id FROM artist WHERE last_name = 'Cranberries'));
+
+select * from album;
