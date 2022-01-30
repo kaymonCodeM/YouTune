@@ -27,7 +27,7 @@ Artist artist = artistDao.find(Long.parseLong(artistId));
 
 if (artist != null){
 %>
-<form action="/youtunes/shop/MusicServlet" method="post">
+<form action="/youtunes/MusicServlet" method="post">
 
 <input type="hidden" name="action" value="update_artist" />
 <input type="hidden" name="artistId" value="<%=artist.getArtistId() %>" />

@@ -15,7 +15,7 @@
 
 <div class="container p-5">
 	<h2 class="text-center">New Artist Form</h2>
-	<form action="/youtunes/shop/MusicServlet" method="post">
+	<form action="/youtunes/MusicServlet" method="post">
 		<input type="hidden" name="action" value="create_artist" />
 					
 		<div class="mb-4">

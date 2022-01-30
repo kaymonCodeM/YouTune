@@ -56,7 +56,7 @@
 							<td><%=artist.getLastName()%></td>
 							<td>
 								<a href="/youtunes/jsp/artists/Details.jsp?artistId=<%=artist.getArtistId()%>" class="link">Edit</a> |
-								<a href="/youtunes/shop/MusicServlet?action=delete_artist&artistId=<%=artist.getArtistId() %>" class="link">Delete</a>
+								<a href="/youtunes/MusicServlet?action=delete_artist&artistId=<%=artist.getArtistId() %>" class="link">Delete</a>
 							</td>
 						</tr>
 				<% } %>

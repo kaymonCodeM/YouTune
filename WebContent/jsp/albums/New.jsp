@@ -22,7 +22,7 @@
 <div class="container">
 <div class="form p-5">
 
-<form action="/youtunes/shop/MusicServlet" method="post">
+<form action="/youtunes/MusicServlet" method="post">
 
 <input type="hidden" name="action" value="create_album" />
 					

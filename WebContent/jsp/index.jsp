@@ -98,7 +98,7 @@ Album album = (Album)iterator.next();
 <input class="btn btn-sm btn-outline-secondary" type="submit" value="Edit">
 </form>
 
-<form action="/youtunes/shop/MusicServlet" method="post">
+<form action="/youtunes/MusicServlet" method="post">
 <input type="hidden" name="albumId" value="<%=album.getAlbumId()%>" />
 <input type="hidden" name="action" value="delete_album" />
 <input class="btn btn-sm btn-outline-secondary ms-1" type="submit" value="Delete">

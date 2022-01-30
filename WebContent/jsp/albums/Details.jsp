@@ -33,7 +33,7 @@ if(album != null){
 <div class="container">
 <div class="form p-5">
 <!-- Album --------------------------------------------------------------------------------------------------------------------------------- -->
-<form action="/youtunes/shop/MusicServlet" method="post">
+<form action="/youtunes/MusicServlet" method="post">
 <input type="hidden" name="action" value="update_album" />
 <input type="hidden" name="albumId" value="<%=album.getAlbumId()%>" />
 					

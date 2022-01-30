@@ -2,8 +2,8 @@ package controller;
 
 import java.io.IOException;
 
+
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,18 +19,13 @@ import service.JdbcArtistDao;
 /**
  * Servlet implementation class MusicServlet
  */
-@WebServlet(name = "MusicServlet", urlPatterns = { "/shop/*" })
+@WebServlet({"/MusicServlet", ""})
 public class MusicServlet extends HttpServlet {
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public MusicServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
+	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
